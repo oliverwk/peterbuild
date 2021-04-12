@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeterBuild</title>
+    <style>
+        @font-face {
+            font-family: 'avenir';
+            src: url('./Avenir-Bold.ttf');
+            display: swap;
+        }
+        :root {
+            --bg-colour: #0e2096;
+        }
+        body {
+            background-color: var(--bg-colour);
+        }
+        header {
+            background-image: url('./peter.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .center {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 69px;
+            font: normal normal normal 80px/1.4em avenir, sans-serif;
+            color: white;
+        }
+        header > h1 {
+            font-size: 69px;
+            color: white;
+        } 
+        main > .header {
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PeterBuild</h1>
+        <svg class="center" height="700" width="700">
+            <circle cx="350" cy="350" r="331.5" stroke="#00EAFA" stroke-width="3" fill="none" style="opacity:0.5"/>
+        </svg>
+    </header>
+    <main>
+        <h1 class="header">NIET ALLEEN EEN<br>TIMMERMAN</h1>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
