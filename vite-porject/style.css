@@ -232,6 +232,7 @@
   }
   
   .kwaliteiten {
+    padding-top: 10vh;
     margin: auto;
     display: flex;
     align-items: center;
