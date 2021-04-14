@@ -202,7 +202,7 @@
     color: white;
     letter-spacing: 0.2px;
   }
-
+  
   .diensten {
     background-image: url('../diensten.png');
     background-repeat: no-repeat;
@@ -266,23 +266,28 @@
     color: white;
   }
   
-
-
-
+  
+  
+  
   /**
   - MARK: tot hier heb ik alles gedaan en gecheckt
   **/
-
-
-
   
-
-  .CONTACT_Class {
+  
+  
+  
+  footer {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+  }
+  .CONTACT_Class {/*
     position: absolute;
     left: 833px;
     top: 4863px;
     overflow: visible;
-    width: 255px;
+    width: 255px;*/
     white-space: nowrap;
     text-align: center;
     font-family: 'SF Pro';
@@ -292,6 +297,15 @@
     color: rgba(0,234,250,1);
     letter-spacing: 0.5px;
   }
+  form input {
+    background-color: #132999;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #00eafa;
+  }
+  /*
   .Naam {
     overflow: visible;
     position: absolute;
@@ -402,21 +416,25 @@
     font-size: 21px;
     color: rgba(0,234,250,1);
     letter-spacing: 0.5px;
-  }
+  }*/
   .copyright {
-    position: absolute;
-    left: 787px;
-    top: 5557px;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+  }
+  .copyright p {
     overflow: visible;
-    width: 347px;
     white-space: nowrap;
     text-align: center;
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    color: rgba(0,234,250,1);
+    color: #00eafa;
   }
+  
   .head {
     background-image: url('../peter.png');
     background-position: center;
