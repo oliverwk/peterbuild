@@ -118,7 +118,7 @@
     </main>
     <footer>
       <h1 class="header">CONTACT</h1>
-      <form action="./email" method="post">
+      <form action="./email.html" method="get">
         <input type="text" name="naam" id="naam" placeholder="Naam">
         <label for="naam">Naam</label>
         <input type="email" name="Email" id="Email" placeholder="Email">
@@ -127,11 +127,11 @@
         <input type="text" name="Onderwerp" id="Onderwerp" placeholder="Onderwerp">
         <label for="Onderwerp">Onderwerp</label>
         <br>
-        <input type="text" name="Bericht" id="Bericht" placeholder="Bericht">
+        <textarea name="Bericht" id="Bericht" cols="30" rows="10" placeholder="Bericht"></textarea>
         <label for="Bericht">Bericht</label>
         <br>
+        <button id="btn" type="submit">Verstuur</button>
       </form>
-      <button type="submit">Verstuur</button>
       <div class="copyright">
         <p>© 2021 by Olivier Wittop Koning & Peter Pütmann</p>
       </div>

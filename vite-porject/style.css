@@ -302,9 +302,24 @@
   form input[name=Onderwerp] {
       width: 60ch;
   }
-  form input[name=Bericht] {
+  form textarea[name=Bericht] {
       width: 60ch;
       height: 15ch;
+  }
+  form textarea {
+    padding: 10px;
+    color: white;
+    flex-wrap: wrap-reverse;
+    background-color: #132999;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #00eafa;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
   }
   form input {
     padding: 10px;
