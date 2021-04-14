@@ -293,7 +293,21 @@
     letter-spacing: 0.5px;
     padding: 15vh;
   }
+  form input[type=email] {
+      width: 30ch;
+  }
+  form input[name=naam] {
+      width: 30ch;
+  }
+  form input[name=Onderwerp] {
+      width: 60ch;
+  }
+  form input[name=Bericht] {
+      width: 60ch;
+      height: 15ch;
+  }
   form input {
+    padding: 10px;
     color: white;
     flex-wrap: wrap-reverse;
     background-color: #132999;
@@ -302,6 +316,10 @@
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid #00eafa;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
   }
   form label {
     left: 8px;
@@ -311,11 +329,12 @@
     transition: all 200ms;
     color: white;
   }
-  form button {
-    color: white;
+  footer button {
+    padding-top: 10vh;
+    color: #00eafa;
     padding: 15px;
     border-radius: 5px;
-    background-color: #00eafa;
+    background-color: #132999;
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: normal;
