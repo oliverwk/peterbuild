@@ -217,11 +217,11 @@
     place-content: center;
     gap: 1ch;
   }
-  .dienst_header {
+  .dienst_header {/*
     position: absolute;
     left: 829px;
     top: 3812px;
-    width: 263px;
+    width: 263px;*/
     text-align: center;
     font-family: 'SF Pro';
     font-style: normal;

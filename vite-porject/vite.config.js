@@ -12,7 +12,6 @@ export default defineConfig({
     },
     server: {
         port: 5000,
-        https: true,
         https: {
             key: readFileSync('/Users/MWK/key.pem'),
             cert: readFileSync('/Users/MWK/cert.pem')
