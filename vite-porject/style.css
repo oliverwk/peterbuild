@@ -170,9 +170,23 @@
 **/
 
 
+    .ProjectenHeader {
+      position: absolute;
+      left: 808px;
+      top: 2601px;
+      overflow: visible;
+      width: 305px;
+      white-space: nowrap;
+      text-align: center;
+      font-family: 'SF Pro';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      color: #00eafa;
+      letter-spacing: 0.2px;
+    }
 
-
-  .header_projecten {
+  .PROJECT_TITLE__Class {
     position: absolute;
     left: 401px;
     top: 2791px;
