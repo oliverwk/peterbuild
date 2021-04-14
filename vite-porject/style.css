@@ -1,773 +1,533 @@
 	@font-face {
-      font-family: 'SF Pro';
-      src: url('../Avenir-Bold.ttf');
-    }
-    @font-face {
-        font-family: 'Avenir';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4) format('woff2');
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      border: none;
-    }
-    body {
-      background-color: rgb(14,32,150);
-    }
-    .about_Class {
-      position: absolute;
-      width: 99vw;
-      height: 99vh;
-      /*left: -54px; */
-      top: 1072px;
-      overflow: visible;
-    }
-    .peter_Class {
-      position: absolute;
-      width: 1796px;
-      height: 1361px;
-      left: 62px;
-      top: -140px;
-      overflow: visible;
-    }
-    .Ellipse_1_Class {
-      opacity: 0.5;
-    }
-    .Ellipse_1 {
-      position: absolute;
-      overflow: visible;
-      width: 663px;
-      height: 663px;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .Ellipse_2_Class {
-      opacity: 0.3;
-    }
-    .Ellipse_2 {
-      position: absolute;
-      overflow: visible;
-      width: 842px;
-      height: 842px;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .Ellipse_3_Class {
-      opacity: 0.05;
-    }
-    .Ellipse_3 {
-      position: absolute;
-      overflow: visible;
-      width: 960px;
-      height: 960px;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .PeterBuild_Class {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow: visible;
-      white-space: nowrap;
-      text-align: left;
-      font-family: Arial, Helvetica, sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 90px;
-      color: white;
-    }
-    .header_text_Class {
-      position: absolute;
-      top: calc(60% + 10ch);
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow: visible;
-      width: 281px;
-      white-space: nowrap;
-      text-align: left;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      color: rgba(255,255,255,1);
-    }
-    .about {
-        background-image: url('../about.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 1920px;
-        width: 1194px;
-    }
-    .NIET_ALLEEN_EEN_TIMMERMAN_Class {
-    /*position: absolute;
-      left: 793px;
-      top: 1484px;
-      width: 335px;*/
-      overflow: visible;
-      padding-top: 75vh;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 40px;
-      color: rgba(255,255,255,1);
-    }
-    .InfoAbout {/*
-      position: absolute;
-      left: 703px;
-      top: 1609px;
-      overflow: visible;
-      width: 515px;
-      margin-top: -4.5px;
-      line-height: 30px;*/
-      padding-top: 1vh;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'Avenir';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-    }
-    .percentage {
-      position: relative;
-      overflow: visible;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 70px;
-      color: white;
-      padding: 1vw;
-    }
-    .percentages {
-      position: absolute;
-      left: 1173px;
-      top: 1754px;
-      overflow: visible;
-      width: 159px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 70px;
-      color: rgba(255,255,255,1);
-    }
-    .percentages {
-      position: absolute;
-      left: 881px;
-      top: 1754px;
-      overflow: visible;
-      width: 159px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 70px;
-      color: rgba(255,255,255,1);
-    }
-    .van_de_klanten_vind__geeft_ons_Class {
-      position: absolute;
-      left: 578px;
-      top: 1854px;
-      overflow: visible;
-      width: 181px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-    }
-    .van_de_klanten_vind__geeft_ons_z_Class {
-      position: absolute;
-      left: 1162px;
-      top: 1854px;
-      overflow: visible;
-      width: 181px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-    }
-    .van_de_klanten_vind__geeft_ons__Class {
-      position: absolute;
-      left: 870px;
-      top: 1854px;
-      overflow: visible;
-      width: 181px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-    }
-    .LAATSTE_PROJECTEN_Class {
-      position: absolute;
-      left: 808px;
-      top: 2601px;
-      overflow: visible;
-      width: 305px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 50px;
-      color: #00eafa;
-      letter-spacing: 0.2px;
-    }
-    .Rectangle_1 {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2758px;
-    }
-    .Rectangle_1_ {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2766px;
-    }
-    .Rectangle_1_ba {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2774px;
-    }
-    .Rectangle_1_bb {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2782px;
-    }
-    .Rectangle_1_bc {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2790px;
-    }
-    .Rectangle_1_bd {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2798px;
-    }
-    .Rectangle_1_be {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2806px;
-    }
-    .Rectangle_1_bf {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2814px;
-    }
-    .Rectangle_1_bg {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2822px;
-    }
-    .Rectangle_1_bh {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2830px;
-    }
-    .Rectangle_1_bi {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2838px;
-    }
-    .Rectangle_1_bj {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2846px;
-    }
-    .Rectangle_1_bk {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2854px;
-    }
-    .Rectangle_1_bl {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2862px;
-    }
-    .Rectangle_1_bm {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2870px;
-    }
-    .Rectangle_1_bn {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2878px;
-    }
-    .Rectangle_1_bo {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2886px;
-    }
-    .Rectangle_1_bp {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2894px;
-    }
-    .Rectangle_1_bq {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2902px;
-    }
-    .Rectangle_1_br {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2910px;
-    }
-    .Rectangle_1_bs {
-      position: absolute;
-      overflow: visible;
-      width: 4px;
-      height: 4px;
-      left: 958px;
-      top: 2918px;
-    }
-    .PROJECT_TITLE__Class {
-      position: absolute;
-      left: 401px;
-      top: 2791px;
-      overflow: visible;
-      width: 144px;
-      white-space: nowrap;
-      text-align: left;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 30px;
-      color: rgba(255,255,255,1);
-      letter-spacing: 0.2px;
-    }
-    .project_Class {
-      position: absolute;
-      width: 326px;
-      height: 500px;
-      left: 401px;
-      top: 2940px;
-      overflow: visible;
-    }
-    .Line_1 {
-      overflow: visible;
-      position: absolute;
-      width: 326px;
-      height: 5px;
-      left: 401.5px;
-      top: 2901.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .PROJECT_TITLE__bq_Class {
-      position: absolute;
-      left: 1193px;
-      top: 2791px;
-      overflow: visible;
-      width: 144px;
-      white-space: nowrap;
-      text-align: left;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 30px;
-      color: rgba(255,255,255,1);
-      letter-spacing: 0.2px;
-    }
-    .project_br_Class {
-      position: absolute;
-      width: 326px;
-      height: 500px;
-      left: 1193px;
-      top: 2940px;
-      overflow: visible;
-    }
-    .Line_2 {
-      overflow: visible;
-      position: absolute;
-      width: 326px;
-      height: 5px;
-      left: 1193.5px;
-      top: 2901.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .PROJECT_TITLE__bt_Class {
-      position: absolute;
-      left: 808px;
-      top: 2959px;
-      overflow: visible;
-      width: 144px;
-      white-space: nowrap;
-      text-align: left;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 30px;
-      color: rgba(255,255,255,1);
-      letter-spacing: 0.2px;
-    }
-    .project_bu_Class {
-      position: absolute;
-      width: 326px;
-      height: 500px;
-      left: 797px;
-      top: 3106px;
-      overflow: visible;
-    }
-    .Line_3 {
-      overflow: visible;
-      position: absolute;
-      width: 326px;
-      height: 5px;
-      left: 797.5px;
-      top: 3068.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .about_2_Class {
-      position: absolute;
-      width: 1761px;
-      height: 1080px;
-      left: 80px;
-      top: 3570px;
-      overflow: visible;
-    }
-    .DIENSTEN_Class {
-      position: absolute;
-      left: 829px;
-      top: 3812px;
-      width: 263px;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 50px;
-      color: rgba(0,234,250,1);
-      letter-spacing: 0.5px;
-    }
-    .CREATIVITEIT_Class {
-      position: absolute;
-      left: 469px;
-      top: 4209px;
-      overflow: visible;
-      width: 261px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 40px;
-      color: rgba(255,255,255,1);
-    }
-    .TIMMEREN_Class {
-      position: absolute;
-      left: 1191px;
-      top: 4209px;
-      overflow: visible;
-      width: 207px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 40px;
-      color: rgba(255,255,255,1);
-    }
-    .MANAGEMENT_Class {
-      position: absolute;
-      left: 819px;
-      top: 4209px;
-      overflow: visible;
-      width: 283px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 40px;
-      color: rgba(255,255,255,1);
-    }
-    .Momenteel_werk_ik__voornamelij_Class {
-      position: absolute;
-      left: 479px;
-      top: 4280px;
-      overflow: visible;
-      width: 241px;
-      white-space: nowrap;
-      line-height: 30px;
-      margin-top: -4.5px;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-      letter-spacing: 0.05px;
-    }
-    .Ook_voor_kleine_klussen_in__en_Class {
-      position: absolute;
-      left: 1160px;
-      top: 4280px;
-      overflow: visible;
-      width: 269px;
-      white-space: nowrap;
-      line-height: 30px;
-      margin-top: -4.5px;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-    }
-    .Tijdens_mijn_loopbaan_ben_ik___Class {
-      position: absolute;
-      left: 827px;
-      top: 4280px;
-      overflow: visible;
-      width: 267px;
-      white-space: nowrap;
-      line-height: 30px;
-      margin-top: -4.5px;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(191,187,187,1);
-    }
-    .CONTACT_Class {
-      position: absolute;
-      left: 833px;
-      top: 4863px;
-      overflow: visible;
-      width: 255px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 50px;
-      color: rgba(0,234,250,1);
-      letter-spacing: 0.5px;
-    }
-    .Naam {
-      overflow: visible;
-      position: absolute;
-      width: 365px;
-      height: 1px;
-      left: 990.5px;
-      top: 5060.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .E_mail {
-      overflow: visible;
-      position: absolute;
-      width: 365px;
-      height: 1px;
-      left: 564.5px;
-      top: 5060.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .Onderwerp {
-      overflow: visible;
-      position: absolute;
-      width: 791px;
-      height: 1px;
-      left: 564.5px;
-      top: 5138.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .Bericht {
-      overflow: visible;
-      position: absolute;
-      width: 791px;
-      height: 1px;
-      left: 564.5px;
-      top: 5278.5px;
-      transform: matrix(1,0,0,1,0,0);
-    }
-    .Naam_b_Class {
-      position: absolute;
-      left: 565px;
-      top: 5021px;
-      overflow: visible;
-      width: 51px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 18px;
-      color: rgba(191,187,187,1);
-      letter-spacing: 0.5px;
-    }
-    .Email_Class {
-      position: absolute;
-      left: 991px;
-      top: 5021px;
-      overflow: visible;
-      width: 47px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 18px;
-      color: rgba(191,187,187,1);
-      letter-spacing: 0.5px;
-    }
-    .Onderwerp_cb_Class {
-      position: absolute;
-      left: 565px;
-      top: 5099px;
-      overflow: visible;
-      width: 97px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 18px;
-      color: rgba(191,187,187,1);
-      letter-spacing: 0.5px;
-    }
-    .Bericht_cc_Class {
-      position: absolute;
-      left: 565px;
-      top: 5167px;
-      overflow: visible;
-      width: 63px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: lighter;
-      font-size: 18px;
-      color: rgba(191,187,187,1);
-      letter-spacing: 0.5px;
-    }
-    .Verstuur_Class {
-      position: absolute;
-      left: 912px;
-      top: 5339px;
-      overflow: visible;
-      width: 97px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 21px;
-      color: rgba(0,234,250,1);
-      letter-spacing: 0.5px;
-    }
-    .copyright {
-      position: absolute;
-      left: 787px;
-      top: 5557px;
-      overflow: visible;
-      width: 347px;
-      white-space: nowrap;
-      text-align: center;
-      font-family: 'SF Pro';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      color: rgba(0,234,250,1);
-    }
-    .feedback {
-      display: none;
-      align-items: center;
-      align-content: space-between;
-      max-width: 50%;
-    }
-    .head {
-      background-image: url('../peter.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-size: cover;
-      background-blend-mode: color;
-      width: 1796px;
-      /*height: 1361px;*/
-      height: 125vh;
-    }
+    font-family: 'SF Pro';
+    src: url('../Avenir-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4) format('woff2');
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+  body {
+    background-color: #132999;
+  }
+  .about_Class {
+    position: absolute;
+    width: 99vw;
+    height: 99vh;
+    /*left: -54px; */
+    top: 1072px;
+    overflow: visible;
+  }
+  .peter_Class {
+    position: absolute;
+    width: 1796px;
+    height: 1361px;
+    left: 62px;
+    top: -140px;
+    overflow: visible;
+  }
+  .Ellipse_1_Class {
+    opacity: 0.5;
+  }
+  .Ellipse_1 {
+    position: absolute;
+    overflow: visible;
+    width: 663px;
+    height: 663px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Ellipse_2_Class {
+    opacity: 0.3;
+  }
+  .Ellipse_2 {
+    position: absolute;
+    overflow: visible;
+    width: 842px;
+    height: 842px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Ellipse_3_Class {
+    opacity: 0.05;
+  }
+  .Ellipse_3 {
+    position: absolute;
+    overflow: visible;
+    width: 960px;
+    height: 960px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .PeterBuild_Class {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    color: white;
+  }
+  .header_text_Class {
+    position: absolute;
+    top: calc(60% + 10ch);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    width: 281px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+  }
+  .about {
+    background-image: url('../about.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 1194px;
+    display: grid;
+    place-content: center;
+    gap: 1ch;
+  }
+  .about_header {
+    overflow: visible;
+    padding-top: 25vh;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+  }
+  .InfoAbout {
+    padding-top: 2vh;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    color: #bfbbbb;
+  }
+  .feedback {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+  }
+  .feedback div {
+    padding: 3vw;
+  }
+  .feedback span {
+    position: relative;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: #bfbbbb;
+  }
+  .feedback p {
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    color: white;
+    padding: 1vw;
+  }
+
+
+
+/**
+- Mark tot hier heb ik alles gedaan en gecheckt
+**/
+
+
+
+
+  .header_projecten {
+    position: absolute;
+    left: 401px;
+    top: 2791px;
+    overflow: visible;
+    width: 144px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 0.2px;
+  }
+  .project_Class {
+    position: absolute;
+    width: 326px;
+    height: 500px;
+    left: 401px;
+    top: 2940px;
+    overflow: visible;
+  }
+  .Line_1 {
+    overflow: visible;
+    position: absolute;
+    width: 326px;
+    height: 5px;
+    left: 401.5px;
+    top: 2901.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .PROJECT_TITLE__bq_Class {
+    position: absolute;
+    left: 1193px;
+    top: 2791px;
+    overflow: visible;
+    width: 144px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.2px;
+  }
+  .project_br_Class {
+    position: absolute;
+    width: 326px;
+    height: 500px;
+    left: 1193px;
+    top: 2940px;
+    overflow: visible;
+  }
+  .Line_2 {
+    overflow: visible;
+    position: absolute;
+    width: 326px;
+    height: 5px;
+    left: 1193.5px;
+    top: 2901.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .PROJECT_TITLE__bt_Class {
+    position: absolute;
+    left: 808px;
+    top: 2959px;
+    overflow: visible;
+    width: 144px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.2px;
+  }
+  .project_bu_Class {
+    position: absolute;
+    width: 326px;
+    height: 500px;
+    left: 797px;
+    top: 3106px;
+    overflow: visible;
+  }
+  .Line_3 {
+    overflow: visible;
+    position: absolute;
+    width: 326px;
+    height: 5px;
+    left: 797.5px;
+    top: 3068.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .about_2_Class {
+    position: absolute;
+    width: 1761px;
+    height: 1080px;
+    left: 80px;
+    top: 3570px;
+    overflow: visible;
+  }
+  .DIENSTEN_Class {
+    position: absolute;
+    left: 829px;
+    top: 3812px;
+    width: 263px;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0,234,250,1);
+    letter-spacing: 0.5px;
+  }
+  .CREATIVITEIT_Class {
+    position: absolute;
+    left: 469px;
+    top: 4209px;
+    overflow: visible;
+    width: 261px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+  }
+  .TIMMEREN_Class {
+    position: absolute;
+    left: 1191px;
+    top: 4209px;
+    overflow: visible;
+    width: 207px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+  }
+  .MANAGEMENT_Class {
+    position: absolute;
+    left: 819px;
+    top: 4209px;
+    overflow: visible;
+    width: 283px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(255,255,255,1);
+  }
+  .Momenteel_werk_ik__voornamelij_Class {
+    position: absolute;
+    left: 479px;
+    top: 4280px;
+    overflow: visible;
+    width: 241px;
+    white-space: nowrap;
+    line-height: 30px;
+    margin-top: -4.5px;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(191,187,187,1);
+    letter-spacing: 0.05px;
+  }
+  .Ook_voor_kleine_klussen_in__en_Class {
+    position: absolute;
+    left: 1160px;
+    top: 4280px;
+    overflow: visible;
+    width: 269px;
+    white-space: nowrap;
+    line-height: 30px;
+    margin-top: -4.5px;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(191,187,187,1);
+  }
+  .Tijdens_mijn_loopbaan_ben_ik___Class {
+    position: absolute;
+    left: 827px;
+    top: 4280px;
+    overflow: visible;
+    width: 267px;
+    white-space: nowrap;
+    line-height: 30px;
+    margin-top: -4.5px;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(191,187,187,1);
+  }
+  .CONTACT_Class {
+    position: absolute;
+    left: 833px;
+    top: 4863px;
+    overflow: visible;
+    width: 255px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0,234,250,1);
+    letter-spacing: 0.5px;
+  }
+  .Naam {
+    overflow: visible;
+    position: absolute;
+    width: 365px;
+    height: 1px;
+    left: 990.5px;
+    top: 5060.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .E_mail {
+    overflow: visible;
+    position: absolute;
+    width: 365px;
+    height: 1px;
+    left: 564.5px;
+    top: 5060.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .Onderwerp {
+    overflow: visible;
+    position: absolute;
+    width: 791px;
+    height: 1px;
+    left: 564.5px;
+    top: 5138.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .Bericht {
+    overflow: visible;
+    position: absolute;
+    width: 791px;
+    height: 1px;
+    left: 564.5px;
+    top: 5278.5px;
+    transform: matrix(1,0,0,1,0,0);
+  }
+  .Naam_b_Class {
+    position: absolute;
+    left: 565px;
+    top: 5021px;
+    overflow: visible;
+    width: 51px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(191,187,187,1);
+    letter-spacing: 0.5px;
+  }
+  .Email_Class {
+    position: absolute;
+    left: 991px;
+    top: 5021px;
+    overflow: visible;
+    width: 47px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(191,187,187,1);
+    letter-spacing: 0.5px;
+  }
+  .Onderwerp_cb_Class {
+    position: absolute;
+    left: 565px;
+    top: 5099px;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(191,187,187,1);
+    letter-spacing: 0.5px;
+  }
+  .Bericht_cc_Class {
+    position: absolute;
+    left: 565px;
+    top: 5167px;
+    overflow: visible;
+    width: 63px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(191,187,187,1);
+    letter-spacing: 0.5px;
+  }
+  .Verstuur_Class {
+    position: absolute;
+    left: 912px;
+    top: 5339px;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(0,234,250,1);
+    letter-spacing: 0.5px;
+  }
+  .copyright {
+    position: absolute;
+    left: 787px;
+    top: 5557px;
+    overflow: visible;
+    width: 347px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(0,234,250,1);
+  }
+  .head {
+    background-image: url('../peter.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-blend-mode: color;
+    width: 1796px;
+    /*height: 1361px;*/
+    height: 125vh;
+  }
