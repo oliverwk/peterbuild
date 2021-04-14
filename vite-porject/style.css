@@ -294,17 +294,17 @@
     padding: 15vh;
   }
   form input[type=email] {
-      width: 30ch;
+    width: 30ch;
   }
   form input[name=naam] {
-      width: 30ch;
+    width: 30ch;
   }
   form input[name=Onderwerp] {
-      width: 60ch;
+    width: 60ch;
   }
   form textarea[name=Bericht] {
-      width: 60ch;
-      height: 15ch;
+    width: 60ch;
+    height: 15ch;
   }
   form textarea {
     padding: 10px;
@@ -355,118 +355,6 @@
     font-weight: normal;
     font-size: 15px;
   }
-  /*
-  .Naam {
-    overflow: visible;
-    position: absolute;
-    width: 365px;
-    height: 1px;
-    left: 990.5px;
-    top: 5060.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  .E_mail {
-    overflow: visible;
-    position: absolute;
-    width: 365px;
-    height: 1px;
-    left: 564.5px;
-    top: 5060.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  .Onderwerp {
-    overflow: visible;
-    position: absolute;
-    width: 791px;
-    height: 1px;
-    left: 564.5px;
-    top: 5138.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  .Bericht {
-    overflow: visible;
-    position: absolute;
-    width: 791px;
-    height: 1px;
-    left: 564.5px;
-    top: 5278.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  .Naam_b_Class {
-    position: absolute;
-    left: 565px;
-    top: 5021px;
-    overflow: visible;
-    width: 51px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-    color: rgba(191,187,187,1);
-    letter-spacing: 0.5px;
-  }
-  .Email_Class {
-    position: absolute;
-    left: 991px;
-    top: 5021px;
-    overflow: visible;
-    width: 47px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-    color: rgba(191,187,187,1);
-    letter-spacing: 0.5px;
-  }
-  .Onderwerp_cb_Class {
-    position: absolute;
-    left: 565px;
-    top: 5099px;
-    overflow: visible;
-    width: 97px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-    color: rgba(191,187,187,1);
-    letter-spacing: 0.5px;
-  }
-  .Bericht_cc_Class {
-    position: absolute;
-    left: 565px;
-    top: 5167px;
-    overflow: visible;
-    width: 63px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 18px;
-    color: rgba(191,187,187,1);
-    letter-spacing: 0.5px;
-  }
-  .Verstuur_Class {
-    position: absolute;
-    left: 912px;
-    top: 5339px;
-    overflow: visible;
-    width: 97px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    color: rgba(0,234,250,1);
-    letter-spacing: 0.5px;
-  }*/
   .copyright {
     padding-top: 10vh;
     display: flex;
@@ -495,4 +383,38 @@
     width: 100vw;
     /*height: 1361px;*/
     height: 125vh;
+  }
+  
+  /*
+  #kapschuur:hover {
+    filter: grayscale(0%);
+    animation-name: graying;
+    animation-duration: 0.5s;
+  }
+  #kapschuur {
+    filter: grayscale(100%);
+    transition: filter 0.5s linear;
+  }
+  #steigerhouten-lamp:hover {
+    filter: grayscale(0%);
+    animation-name: graying;
+    animation-duration: 0.5s;
+  }
+  #steigerhouten-lamp {
+    filter: grayscale(100%);
+    transition: filter 0.5s linear;
+  }*/
+  body > main > section.projecten > div > div > a > img:hover {
+    filter: grayscale(0%);
+    animation-name: graying;
+    animation-duration: 0.5s;
+  }
+
+  body > main > section.projecten > div > div > a > img {
+    filter: grayscale(100%);
+    transition: filter 0.5s linear;
+  }
+  @keyframes graying {
+    from {filter: grayscale(100%);}
+    to {filter: grayscale(0%);}
   }
