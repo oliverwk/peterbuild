@@ -147,12 +147,6 @@
     padding: 1vw;
   }
   
-  
-  
-  /**
-  - MARK: tot hier heb ik alles gedaan en gecheckt
-  **/
-  
   .projecten {
     padding-top: 20vh;
     display: flex;
@@ -205,106 +199,10 @@
     letter-spacing: 0.2px;
   }
   
+  /**
+  - MARK: tot hier heb ik alles gedaan en gecheckt
+  **/
   
-  
-  /*
-  .PROJECT_TITLE__Class {
-    position: absolute;
-    left: 401px;
-    top: 2791px;
-    overflow: visible;
-    width: 144px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    color: white;
-    letter-spacing: 0.2px;
-  }
-  .project_Class {
-    position: absolute;
-    width: 326px;
-    height: 500px;
-    left: 401px;
-    top: 2940px;
-    overflow: visible;
-  }
-  .Line_1 {
-    overflow: visible;
-    position: absolute;
-    width: 326px;
-    height: 5px;
-    left: 401.5px;
-    top: 2901.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  .PROJECT_TITLE__bq_Class {
-    position: absolute;
-    left: 1193px;
-    top: 2791px;
-    overflow: visible;
-    width: 144px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    color: rgba(255,255,255,1);
-    letter-spacing: 0.2px;
-  }
-  .project_br_Class {
-    position: absolute;
-    width: 326px;
-    height: 500px;
-    left: 1193px;
-    top: 2940px;
-    overflow: visible;
-  }
-  .Line_2 {
-    overflow: visible;
-    position: absolute;
-    width: 326px;
-    height: 5px;
-    left: 1193.5px;
-    top: 2901.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  .PROJECT_TITLE__bt_Class {
-    position: absolute;
-    left: 808px;
-    top: 2959px;
-    overflow: visible;
-    width: 144px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    color: rgba(255,255,255,1);
-    letter-spacing: 0.2px;
-  }
-  .project_bu_Class {
-    position: absolute;
-    width: 326px;
-    height: 500px;
-    left: 797px;
-    top: 3106px;
-    overflow: visible;
-  }
-  .Line_3 {
-    overflow: visible;
-    position: absolute;
-    width: 326px;
-    height: 5px;
-    left: 797.5px;
-    top: 3068.5px;
-    transform: matrix(1,0,0,1,0,0);
-  }
-  */
   .about_2_Class {
     position: absolute;
     width: 100vw;
