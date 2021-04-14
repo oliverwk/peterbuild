@@ -168,7 +168,7 @@
     letter-spacing: 0.2px;
   }
   .protofolio {
-    padding-top: 100px !important; 
+    padding-top: 0px; 
     display: flex;
     align-items: center;
     align-content: space-between;
@@ -176,7 +176,7 @@
     width: min-content;
   }
   .protofolio img {
-    margin-top: 10px;
+    margin-top: 100px;
     width: 326px;
     height: 500px;
   }
@@ -186,6 +186,10 @@
   .protofolio svg {
     width: 326px;
     height: 10px;
+  }
+  .protofolio div:nth-child(even) {
+    padding-top: 250px; 
+    /*Deze naar beneden doen*/
   }
   .protofolio h1 {
     overflow: visible;
@@ -202,16 +206,18 @@
   /**
   - MARK: tot hier heb ik alles gedaan en gecheckt
   **/
-  
-  .about_2_Class {
-    position: absolute;
+  .diensten {
+    background-image: url('../diensten.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
     width: 100vw;
-    height: 1080px;
-    left: 80px;
-    top: 3570px;
-    overflow: visible;
+    display: grid;
+    place-content: center;
+    gap: 1ch;
   }
-  .DIENSTEN_Class {
+  .dienst_header {
     position: absolute;
     left: 829px;
     top: 3812px;
@@ -224,6 +230,50 @@
     color: rgba(0,234,250,1);
     letter-spacing: 0.5px;
   }
+  
+  .kwaliteiten {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+  }
+  .kwaliteiten div {
+    padding: 3vw;
+  }
+  .kwaliteiten p {
+    overflow: visible;
+    white-space: nowrap;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    color: #bfbbbb;
+    letter-spacing: 0.05px;
+  }
+  .kwaliteiten h2 {
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+  }
+
+  /*
+  .about_2_Class {
+    position: absolute;
+    width: 100vw;
+    height: 1080px;
+    left: 80px;
+    top: 3570px;
+    overflow: visible;
+  }
+  
   .CREATIVITEIT_Class {
     position: absolute;
     left: 469px;
@@ -315,6 +365,7 @@
     font-size: 21px;
     color: rgba(191,187,187,1);
   }
+  */
   .CONTACT_Class {
     position: absolute;
     left: 833px;
