@@ -202,10 +202,7 @@
     color: white;
     letter-spacing: 0.2px;
   }
-  
-  /**
-  - MARK: tot hier heb ik alles gedaan en gecheckt
-  **/
+
   .diensten {
     background-image: url('../diensten.png');
     background-repeat: no-repeat;
@@ -241,6 +238,10 @@
   }
   .kwaliteiten div {
     padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .kwaliteiten p {
     overflow: visible;
@@ -264,109 +265,18 @@
     font-size: 40px;
     color: white;
   }
-
-  /*
-  .about_2_Class {
-    position: absolute;
-    width: 100vw;
-    height: 1080px;
-    left: 80px;
-    top: 3570px;
-    overflow: visible;
-  }
   
-  .CREATIVITEIT_Class {
-    position: absolute;
-    left: 469px;
-    top: 4209px;
-    overflow: visible;
-    width: 261px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgba(255,255,255,1);
-  }
-  .TIMMEREN_Class {
-    position: absolute;
-    left: 1191px;
-    top: 4209px;
-    overflow: visible;
-    width: 207px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgba(255,255,255,1);
-  }
-  .MANAGEMENT_Class {
-    position: absolute;
-    left: 819px;
-    top: 4209px;
-    overflow: visible;
-    width: 283px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgba(255,255,255,1);
-  }
-  .Momenteel_werk_ik__voornamelij_Class {
-    position: absolute;
-    left: 479px;
-    top: 4280px;
-    overflow: visible;
-    width: 241px;
-    white-space: nowrap;
-    line-height: 30px;
-    margin-top: -4.5px;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    color: rgba(191,187,187,1);
-    letter-spacing: 0.05px;
-  }
-  .Ook_voor_kleine_klussen_in__en_Class {
-    position: absolute;
-    left: 1160px;
-    top: 4280px;
-    overflow: visible;
-    width: 269px;
-    white-space: nowrap;
-    line-height: 30px;
-    margin-top: -4.5px;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    color: rgba(191,187,187,1);
-  }
-  .Tijdens_mijn_loopbaan_ben_ik___Class {
-    position: absolute;
-    left: 827px;
-    top: 4280px;
-    overflow: visible;
-    width: 267px;
-    white-space: nowrap;
-    line-height: 30px;
-    margin-top: -4.5px;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    color: rgba(191,187,187,1);
-  }
-  */
+
+
+
+  /**
+  - MARK: tot hier heb ik alles gedaan en gecheckt
+  **/
+
+
+
+  
+
   .CONTACT_Class {
     position: absolute;
     left: 833px;
