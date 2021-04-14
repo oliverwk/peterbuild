@@ -1,6 +1,6 @@
 /**
  * @type {import('vite').UserConfig}
- */
+**/
 
 import { defineConfig } from 'vite';
 import { readFileSync } from 'fs';
@@ -12,6 +12,10 @@ export default defineConfig({
     },
     server: {
         port: 5000,
-        https: false
+        https: true,
+        https: {
+            key: readFileSync('/Users/MWK/key.pem'),
+            cert: readFileSync('/Users/MWK/cert.pem')
+        },
     },
 })
