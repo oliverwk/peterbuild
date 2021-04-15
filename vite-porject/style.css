@@ -391,7 +391,7 @@
   
   .overlay {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -402,7 +402,6 @@
     background-attachment: scroll;
     background-size: cover;
     background-blend-mode: color;
-    width: 100vw;
     height: 125vh;
     overflow-x: hidden;
     transition: 0.5s;
@@ -411,7 +410,7 @@
   .overlay-content {
     position: relative;
     top: 25%;
-    width: 0%;
+    width: 100%;
     text-align: center;
     margin-top: 30px;
   }
