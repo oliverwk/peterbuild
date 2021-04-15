@@ -39,7 +39,7 @@
     }
     .prijs {
         font-family: 'SF Pro';
-        margin-right: 5vw;
+        margin-right: 10vw;
         text-align: right;
         color: #bfbbbb
     }
@@ -53,6 +53,7 @@
         margin-left: 5vw;
     }
     main {
+        padding-top: 25vh;
         display: flex;
         align-items: center;
         justify-content: space-between;

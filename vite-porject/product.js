@@ -23,7 +23,7 @@ function AddProduct(product) {
     div.appendChild(title);
     let prijs = document.createElement("h3");
     prijs.className = "prijs";
-    prijs.innerText = (product.variants[0].price / 100).toFixed(2);
+    prijs.innerText = "€"+(product.variants[0].price / 100).toFixed(2);
     div.appendChild(prijs);
     let p = document.createElement("p");
     p.className = "detail";
