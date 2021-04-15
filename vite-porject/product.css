@@ -37,6 +37,12 @@
         text-align: right;
         color: white
     }
+    .prijs {
+        font-family: 'SF Pro';
+        margin-right: 5vw;
+        text-align: right;
+        color: #bfbbbb
+    }
     
     .img {
         width: 50vh;
