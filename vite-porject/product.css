@@ -65,14 +65,16 @@
     button {
         font: normal normal normal normal 16px/26px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         padding:  0.75em 2.5rem;
-        margin-top: 1vh;
-        border-radius: 7px;
         background-color: #132999;
         transition: background-color 0.2s linear;
         border: 2px solid #00eafa;
         color: white;
         text-decoration: none;
-        text-align: right;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .button {
+        margin-top: 1vh;
         float: right;
         margin-right: 10vw;
     }
@@ -85,10 +87,17 @@
     .error {
         position: absolute;
         font-family: 'SF Pro';
-        margin-right: 10vw;
-        text-align: right;
+        text-align: center;
         color: white;
         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn-error {
+        position: absolute;
+        text-align: center;
+        color: white;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
     }

@@ -34,6 +34,7 @@ function AddProduct(product) {
     let btn = document.createElement("button");
     btn.setAttribute("type", "button");
     btn.innerText = "KOOP NU";
+    btn.className = "button";
     div.appendChild(btn);
 }
 
@@ -46,5 +47,5 @@ let product = producten.find(item => {
 if (product) {
     AddProduct(product)
 } else {
-    document.getElementsByTagName("main")[0].innerHTML = '<h1 class="error">Product niet gevonden.</h1>';
+    document.getElementsByTagName("main")[0].innerHTML = '<h1 class="error">Product niet gevonden.</h1><br><button onclick="window.location=`/webshop.html`" class="btn-error">Terug</button>';
 }
