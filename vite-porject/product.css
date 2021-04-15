@@ -1,0 +1,77 @@
+	@font-face {
+        font-family: 'SF Pro';
+        src: url('../Avenir-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4) format('woff2');
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+    body {
+        background-color: #132999;
+    }
+    
+    .detail {
+        position: relative;
+        font-family: 'Avenir';
+        text-align: right;
+        margin-top: 5vh;
+        margin-right: 10vw;
+        font-family: "Helvetica Neue";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #bfbbbb;
+        line-height: 1.7rem;
+    }
+    .title {
+        font-family: 'SF Pro';
+        margin-right: 10vw;
+        text-align: right;
+        color: white
+    }
+    
+    .img {
+        width: 50vh;
+        height: auto;
+        border-radius: 5px;
+        margin-top:5vh;
+        float: left;
+        margin-left: 5vw;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main > div {
+        display: block;
+        float: right;
+    }
+    button {
+        font: normal normal normal normal 16px/26px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        padding:  0.75em 2.5rem;
+        margin-top: 1vh;
+        border-radius: 7px;
+        background-color: #132999;
+        transition: background-color 0.2s linear;
+        border: 2px solid #00eafa;
+        color: white;
+        text-decoration: none;
+        text-align: right;
+        float: right;
+        margin-right: 10vw;
+    }
+    button:hover {
+        background-color: #00eafa;
+        transition: background-color 0.2s linear;
+        color: #132999;
+        transition: color 0.2s linear;
+    }

@@ -6,8 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vite PeterBuild</title>
   <link rel="stylesheet" href="./style.css">
+  <script type="module">
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      console.log(anchor)
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        
+        document.getElementById('myNav').style.width = '0%';
+        document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </head>
 <body>
+  <nav>
+    <span style="font-size:50px;cursor:pointer;float:right;color:#00eafa;padding-right:2vw;" onclick="document.getElementById('myNav').style.width = '100%';">&#9776;</span>
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="document.getElementById('myNav').style.width = '0%';">&times;</a>
+      <div class="overlay-content">
+        <a href="#contact">Contact</a>  
+        <a href="#projecten">Projecten</a>
+        <a href="/shop.html">Webshop</a>
+      </div>
+    </div>
+  </nav>
   <header class="head">
     <svg class="Ellipse_1">
       <ellipse fill="transparent" stroke="rgba(0,234,250,1)" stroke-width="3px" stroke-linejoin="miter"
@@ -58,7 +83,7 @@
       </div>
     </div>
   </section>
-  <section class="projecten">
+  <section id="projecten">
     <h1 class="ProjectenHeader">LAATSTE<br/>PROJECTEN</h1>
     <svg width="7" height="100" style="overflow: visible;padding: 10px;">
       <line stroke-dasharray="5, 5" x1="0" y1="5" x2="150" y2="5" style="stroke: #00eafa; stroke-width: 6;" transform='rotate(90)'></line>
@@ -124,7 +149,7 @@
     </main>
     <footer>
       <h1 class="header">CONTACT</h1>
-      <form action="./email.html" method="get">
+      <form action="./email.html" method="get" id="contact">
         <input type="text" name="naam" id="naam" placeholder="Naam">
         <label for="naam">Naam</label>
         <input type="email" name="Email" id="Email" placeholder="Email">

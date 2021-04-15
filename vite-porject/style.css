@@ -88,7 +88,7 @@
     background-attachment: fixed;
     background-size: cover;
     height: 125vh;
-    width: 100vw;
+    width: 99vw;
     display: grid;
     place-content: center;
     gap: 1ch;
@@ -147,7 +147,7 @@
     padding: 1vw;
   }
   
-  .projecten {
+  #projecten {
     padding-top: 20vh;
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     display: grid;
     place-content: center;
     gap: 1ch;
@@ -381,40 +381,80 @@
     background-size: cover;
     background-blend-mode: color;
     width: 100vw;
-    /*height: 1361px;*/
     height: 125vh;
   }
   
-  /*
-  #kapschuur:hover {
+  body > main > section#projecten > div > div > a > img:hover {
     filter: grayscale(0%);
     animation-name: graying;
     animation-duration: 0.5s;
   }
-  #kapschuur {
-    filter: grayscale(100%);
-    transition: filter 0.5s linear;
-  }
-  #steigerhouten-lamp:hover {
-    filter: grayscale(0%);
-    animation-name: graying;
-    animation-duration: 0.5s;
-  }
-  #steigerhouten-lamp {
-    filter: grayscale(100%);
-    transition: filter 0.5s linear;
-  }*/
-  body > main > section.projecten > div > div > a > img:hover {
-    filter: grayscale(0%);
-    animation-name: graying;
-    animation-duration: 0.5s;
-  }
-
-  body > main > section.projecten > div > div > a > img {
+  
+  body > main > section#projecten > div > div > a > img {
     filter: grayscale(100%);
     transition: filter 0.5s linear;
   }
   @keyframes graying {
     from {filter: grayscale(100%);}
     to {filter: grayscale(0%);}
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url('../about-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-blend-mode: color;
+    width: 100vw;
+    height: 125vh;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: normal;
+    color: #00eafa;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
   }
