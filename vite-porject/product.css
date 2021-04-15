@@ -81,3 +81,13 @@
         color: #132999;
         transition: color 0.2s linear;
     }
+    .error {
+        position: absolute;
+        font-family: 'SF Pro';
+        margin-right: 10vw;
+        text-align: right;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
