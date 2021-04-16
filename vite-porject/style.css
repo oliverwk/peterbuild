@@ -1,12 +1,12 @@
-	@font-face {
+@font-face {
     font-family: 'SF Pro';
-    src: url('../Avenir-Bold.ttf');
+    src: url('Avenir-Bold.ttf');
   }
   @font-face {
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4) format('woff2');
+    src: url('https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4') format('woff2');
   }
   * {
     margin: 0;
@@ -83,7 +83,7 @@
     color: white;
   }
   .about {
-    background-image: url('../about.png');
+    background-image: url('about.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -204,7 +204,7 @@
   }
   
   .diensten {
-    background-image: url('../diensten.png');
+    background-image: url('diensten.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -364,7 +364,7 @@
   }
   
   .head {
-    background-image: url('../peter.png');
+    background-image: url('peter.png');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -396,7 +396,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: url('../about-2.png');
+    background-image: url('about-2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;

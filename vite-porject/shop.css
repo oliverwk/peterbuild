@@ -11,7 +11,7 @@ body {
 
 main {
     padding-top: 5em;
-    background-image: url('./projecten.png');
+    background-image: url('projecten.png');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
