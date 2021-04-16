@@ -20,7 +20,6 @@
     
     .detail {
         position: relative;
-        font-family: 'Avenir';
         text-align: right;
         margin-top: 5vh;
         margin-right: 10vw;
@@ -44,12 +43,13 @@
         color: #bfbbbb
     }
     .img {
-        width: 50vh;
+        width: 60vh;
         height: auto;
         border-radius: 5px;
         margin-top:5vh;
         float: left;
         margin-left: 5vw;
+        margin-right: 5vw;
     }
     main {
         padding-top: 25vh;
@@ -60,6 +60,55 @@
     main > div {
         display: block;
         float: right;
+    }
+    @media only screen and (max-width: 768px) {
+        /* Mobile */
+        main > div {
+            display: unset;
+            float: none;
+        }
+        main {
+            padding-top: 5vh;
+            display: unset;
+            align-items: unset;
+            justify-content: unset;
+            display: grid;
+            place-content: center;
+            gap: 1ch;
+        }
+        .img {
+            width: 40vh;
+            border-radius: 5px;
+            margin-top: 1vh;
+            float: none;
+            margin-left: calc(40vh - 55%);
+            margin-right: unset;
+        }
+        .prijs {
+            margin-right: 0%;
+            text-align: center;
+        }
+        .title {
+            margin-right: 0%;
+            text-align: center;
+            font-size: 25px;
+        }
+        .button {
+            margin-top: 1vh;
+            float: unset;
+            margin-right: 0vw !important;
+        } 
+        .detail {
+            text-align: center;
+            margin-top: 2vh;
+            margin-right: 0vw;
+            font-size: 18px;
+        }
+        .div {
+            display: grid;
+            place-content: center;
+            gap: 1ch;
+        }
     }
     button {
         font: normal normal normal normal 16px/26px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
