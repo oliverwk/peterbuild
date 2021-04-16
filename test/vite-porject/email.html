@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail</title>
+</head>
+<body>
+    <pre id="text"></pre>
+    <pre>Kan worden verstuurd is alleen nog niet aangezet door Olivier</pre>
+</body>
+<script type="module">
+    let text = document.getElementById('text');
+    
+    let qeury = window.location.search.substring(1).split("&");
+    let qeurys = {};
+    for (let i = 0; i < qeury.length; i++) {
+        let Lqeury = qeury[i].split("=");
+        qeurys[Lqeury[0]] = decodeURIComponent(Lqeury[1]);
+    }
+    console.log(window.location.search, qeurys);
+    text.innerText = JSON.stringify(qeurys);
+</script>
+</html>

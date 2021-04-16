@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="PeterBuild - timmer wat er te timmeren valt">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta property="og:description" content="PeterBuild" />
+  <meta property="og:title" content="PeterBuild - TimmerMan" />
+  <link rel="apple-touch-startup-image" href="creativiteit.png">
+  <meta name="theme-color" content="#d3a020">
+  <link rel="shortcut icon" href="creativiteit.png">
+  <meta property="og:image:alt" content="PeterBuild Logo" />
+  <meta property="og:type" content="website" />
+  <link rel="apple-touch-icon" sizes="512x512" href="creativiteit.png">
+  <link rel="apple-touch-icon" href="creativiteit.png">
+  <link rel="apple-touch-startup-image" href="creativiteit.png">
+  <link rel="shortcut icon" href="creativiteit.png">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PeterBuild">
+  <meta http-equiv="Cache-control" content="public, max-age=604800">
+  <link rel="preconnect" href="https://raw.githubusercontent.com">
+  <title>Vite PeterBuild</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module">
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      console.log(anchor)
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        
+        document.getElementById('myNav').style.width = '0%';
+        document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav>
+    <span style="font-size:50px;cursor:pointer;float:right;color:#00eafa;padding-right:2vw;" onclick="document.getElementById('myNav').style.width = '100%';">&#9776;</span>
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="document.getElementById('myNav').style.width = '0%';">&times;</a>
+      <div class="overlay-content">
+        <a href="#contact">Contact</a>  
+        <a href="#projecten">Projecten</a>
+        <a href="webshop.html">Webshop</a>
+      </div>
+    </div>
+  </nav>
+  <header class="head">
+    <svg class="Ellipse_1">
+      <ellipse fill="transparent" stroke="rgba(0,234,250,1)" stroke-width="3px" stroke-linejoin="miter"
+      stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="Ellipse_1_Class" rx="331.5" ry="331.5"
+      cx="331.5" cy="331.5">
+    </ellipse>
+  </svg>
+  <svg class="Ellipse_2">
+    <ellipse fill="transparent" stroke="rgba(0,234,250,1)" stroke-width="3px" stroke-linejoin="miter"
+    stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="Ellipse_2_Class" rx="421" ry="421"
+    cx="421" cy="421">
+  </ellipse>
+</svg>
+<svg class="Ellipse_3">
+  <ellipse fill="transparent" stroke="rgba(0,234,250,1)" stroke-width="3px" stroke-linejoin="miter"
+  stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="Ellipse_3_Class" rx="480" ry="480"
+  cx="480" cy="480">
+</ellipse>
+</svg>
+<p class="PeterBuild_Class">
+  PeterBuild
+</p>
+<div class="header_text_Class">
+  <span>Ik ben Peter Püttmann, 57 jaar.<br/>Ik hou van het maken met hout.</span>
+</div>
+</header>
+<main>
+  <section class="about">
+    <p class="about_header">
+      NIET ALLEEN EEN<br/>TIMMERMAN
+    </p>
+    <p class="InfoAbout">
+      In mijn studietijd ben ik in Schoonhoven opgeleid <br/>als edelsmid, hoewel ik hier niet actief mee aan
+      de slag <br/>ben gegaan ben ik altijd creatief bezig geweest.
+    </p>
+    <div class="feedback">
+      <div>
+        <p>95%</p>
+        <span>van de klanten vind<br/> geeft ons een 10!</span>
+      </div>
+      <div>
+        <p>95%</p>
+        <span>van de klanten vind<br/> geeft ons een 10!</span>
+      </div>
+      <div>
+        <p>95%</p>
+        <span>van de klanten vind<br/> geeft ons een 10!</span>
+      </div>
+    </div>
+  </section>
+  <section id="projecten">
+    <h1 class="ProjectenHeader">LAATSTE<br/>PROJECTEN</h1>
+    <svg width="7" height="100" style="overflow: visible;padding: 10px;">
+      <line stroke-dasharray="5, 5" x1="0" y1="5" x2="150" y2="5" style="stroke: #00eafa; stroke-width: 6;" transform='rotate(90)'></line>
+    </svg>
+    <br>
+    <div class="protofolio">
+      <div>
+        <h1>PROJECT<br/>KAPSCHUUR</h1>
+        <svg><line x1="0" y1="5" x2="326" y2="5" style="stroke:#2c7fd3;stroke-width:5"/></svg>
+        <a href="/project-kapschuur.html">
+          <img src="kapschuur.jpg" id="kapschuur" alt="kapschuur">
+        </a>
+      </div>
+      <div>
+        <h1>STEIGERHOUTEN<br/>LAMP</h1>
+        <svg ><line x1="0" y1="5" x2="326" y2="5" style="stroke:#2c7fd3;stroke-width:5"/></svg>
+        <a href="/project-steigerhouten-lamp.html" alt="kapschuur">
+          <img src="3-laags-lamp.jpg" id="steigerhouten-lamp" alt="steigerhouten-lamp">
+        </a>
+      </div>
+      <div>
+        <h1>COMING<br/>SOON</h1>
+        <svg><line x1="0" y1="5" x2="326" y2="5" style="stroke:#2c7fd3;stroke-width:5"/></svg>
+        <a href="#">
+          <img src="coming-soon.png">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="diensten">
+    <h1 class="dienst_header">DIENSTEN</h1>
+    <section class="kwaliteiten">
+      <div>
+        <img src="creativiteit.png" alt="creativiteit icon">
+        <h2>CREATIVITEIT</h2>
+        <br>
+        <br>
+        <p>
+          Momenteel werk ik <br/>voornamelijk met hout, <br/>maar in 2021 wil ik mijn<br/> creativiteit ook in
+          metaal <br/>gaan verwerken.
+        </p>
+      </div>
+      <div>
+        <h2>TIMMEREN</h2>
+        <br>
+        <br>
+        <p>
+          Ook voor kleine klussen in<br/> en om het huis ben ik in te <br/>zetten, geen probleem te<br/> lastig,
+          ik los het wel op.<br/>Mocht ik iets voor je<br/> kunnen betekenen? laat het <br/>hier onder dan
+          weten.</p>
+        </div>
+        <div>
+          <img src="management.png" alt="management icon">
+          <h2>MANAGEMENT</h2>
+          <br>
+          <br>
+          <p>
+            Tijdens mijn loopbaan ben ik<br/> werkvoorbereider en<br/> inkoper geweest, en ben<br/> momenteel
+            werkzaam als<br/> contractmanager en <br/>business analist.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <h1 class="header">CONTACT</h1>
+      <form action="./email.html" method="get" id="contact">
+        <input type="text" name="naam" id="naam" placeholder="Naam">
+        <label for="naam">Naam</label>
+        <input type="email" name="Email" id="Email" placeholder="Email">
+        <label for="Email">Email</label>
+        <br>
+        <input type="text" name="Onderwerp" id="Onderwerp" placeholder="Onderwerp">
+        <label for="Onderwerp">Onderwerp</label>
+        <br>
+        <textarea name="Bericht" id="Bericht" cols="30" rows="10" placeholder="Bericht"></textarea>
+        <label for="Bericht">Bericht</label>
+        <br>
+        <button id="btn" type="submit">Verstuur</button>
+      </form>
+      <div class="copyright">
+        <p>© 2021 by Olivier Wittop Koning & Peter Pütmann</p>
+      </div>
+    </footer>
+  </body>
+  </html>

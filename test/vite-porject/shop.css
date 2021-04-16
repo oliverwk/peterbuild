@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: #132999;
+}
+
+main {
+    padding-top: 5em;
+    background-image: url('./projecten.png');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-blend-mode: color;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+h1 {
+    overflow: visible;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+#header {
+    padding-bottom: 5rem;
+    font-weight: bold;
+    font-size: 90px;
+    color: white;
+}
+section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1ch;
+}
+section a {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section h1 {
+    font-weight: bold;
+    font-size: 40px;
+    white-space: pre-line;
+    color: white;
+    position: absolute;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+section img {
+    border-radius: 15px;
+    width: 30vw;
+}
