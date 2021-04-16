@@ -1,0 +1,63 @@
+	@font-face {
+        font-family: 'SF Pro';
+        src: url('../Avenir-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4) format('woff2');
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+    body {
+        background-color: #132999;
+    }
+    main {
+        background-image: url('projecten.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 99vw;
+        display: grid;
+        place-content: center;
+        gap: 1ch;
+    }
+    h1 {
+        position: absolute;
+        font-family: 'SF Pro';
+        text-align: center;
+        color: white;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h4 {
+        position: absolute;
+        font-family: 'SF Pro';
+        text-align: center;
+        color: white;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    pre {
+        width: min-content;
+        position: absolute;
+        font-family: "SF Mono", "IBM Plex Mono", "Menlo", monospace;
+        font-size: 12px;   
+        top: calc(50% + 20vh);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #00eafa;
+        color: #132999;
+        height: 30vh;
+        border-radius: 5px;
+    }

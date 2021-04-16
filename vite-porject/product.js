@@ -35,6 +35,7 @@ function AddProduct(product) {
     btn.setAttribute("type", "button");
     btn.innerText = "KOOP NU";
     btn.className = "button";
+    btn.setAttribute("id", "submit");
     div.appendChild(btn);
 }
 
@@ -49,3 +50,45 @@ if (product) {
 } else {
     document.getElementsByTagName("main")[0].innerHTML = '<h1 class="error">Product niet gevonden.</h1><br><button onclick="window.location=`/webshop.html`" class="btn-error">Terug</button>';
 }
+
+
+//Dit is voor betalen
+fetch('https://peterbuildpay.herokuapp.com/config')
+.then(function (result) {
+    return result.json();
+})
+.then(function (json) {
+    window.config = json;
+    window.stripe = Stripe(config.publicKey);
+});
+
+// When the form is submitted...
+var submitBtn = document.querySelector('#submit');
+submitBtn.addEventListener('click', function (evt) {
+    
+    // Create the checkout session.
+    fetch('https://peterbuildpay.herokuapp.com/create-checkout-session', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+        quantity: 1,
+    }),
+}).then(function (result) {
+    return result.json();
+}).then(function (data) {
+    // Redirect to Checkout. with the ID of the
+    // CheckoutSession created on the server.
+    stripe.redirectToCheckout({
+        sessionId: data.sessionId,
+    })
+    .then(function (result) {
+        // If redirection fails, display an error to the customer.
+        if (result.error) {
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = result.error.message;
+        }
+    });
+});
+});
