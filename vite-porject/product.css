@@ -1,13 +1,11 @@
 	@font-face {
         font-family: 'SF Pro';
-        display: swap;
         src: url('Avenir-Bold.ttf');
     }
     @font-face {
         font-family: 'Avenir';
         font-style: normal;
         font-weight: 400;
-        display: swap;
         src: url('https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4') format('woff2');
     }
     * {
