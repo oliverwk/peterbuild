@@ -8,12 +8,15 @@ let producten = [{ "id": 2247727, "title": "Handgemaakte sfeervolle en praktisch
 let main = document.getElementsByTagName("main")[0];
 
 function AddProduct(product) {
+    let imgDiv = document.createElement("div");
+    imgDiv.className = "div";
+    main.appendChild(imgDiv);
     let img = document.createElement("img");
     img.className = "img";
     img.src = product.images[product.images.length - 1].url;
     img.alt = product.title;
     img.title = product.title;
-    main.appendChild(img);
+    imgDiv.appendChild(img);
     let div = document.createElement("div");
     main.appendChild(div);
     let title = document.createElement("h1");

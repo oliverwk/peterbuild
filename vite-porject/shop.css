@@ -11,12 +11,12 @@ body {
 
 main {
     padding-top: 5em;
-    background-image: url('projecten.png');
+    background-image: url('./projecten.png');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
     background-blend-mode: color;
-    width: 95vw;
+    width: 99vw;
     display: flex;
     align-items: center;
     align-content: center;
@@ -62,3 +62,16 @@ section img {
     border-radius: 15px;
     width: 30vw;
 }
+@media only screen and (max-width: 768px) {
+    /* Mobile */
+    #header {
+        font-size: 60px;
+    }
+    section img {
+        width: 42vw;
+    }
+    section h1 {
+        font-size: 22px;
+    }
+}
+

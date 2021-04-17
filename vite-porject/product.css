@@ -79,10 +79,11 @@
         .img {
             width: 40vh;
             border-radius: 5px;
-            margin-top: 1vh;
+            margin-top: unset;
             float: none;
-            margin-left: calc(40vh - 55%);
+            margin-left: unset;
             margin-right: unset;
+            margin-bottom: 3vh;
         }
         .prijs {
             margin-right: 0%;
