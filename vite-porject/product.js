@@ -58,7 +58,7 @@ if (product) {
 
 
 //Dit is voor betalen
-fetch('https://peterbuildpay.herokuapp.com/config')
+fetch('https://peterbuildpay.herokuapp.com/config?id=' + new URLSearchParams(window.location.search).get('id'))
 .then(result => {
     return result.json();
 })
@@ -78,6 +78,7 @@ submitBtn.addEventListener('click', evt => {
     },
     body: JSON.stringify({
         quantity: 1,
+        id: new URLSearchParams(window.location.search).get('id'),
     }),
 }).then(result => {
     return result.json();
