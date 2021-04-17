@@ -1,12 +1,14 @@
 	@font-face {
         font-family: 'SF Pro';
-        src: url('../Avenir-Bold.ttf');
+        display: swap;
+        src: url('Avenir-Bold.ttf');
     }
     @font-face {
         font-family: 'Avenir';
         font-style: normal;
         font-weight: 400;
-        src: url(https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4) format('woff2');
+        display: swap;
+        src: url('https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4') format('woff2');
     }
     * {
         margin: 0;
@@ -79,10 +81,11 @@
         .img {
             width: 40vh;
             border-radius: 5px;
-            margin-top: 1vh;
+            margin-top: unset;
             float: none;
-            margin-left: calc(40vh - 55%);
+            margin-left: unset;
             margin-right: unset;
+            margin-bottom: 3vh;
         }
         .prijs {
             margin-right: 0%;

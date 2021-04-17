@@ -16,7 +16,7 @@ main {
     background-repeat: repeat-y;
     background-size: cover;
     background-blend-mode: color;
-    width: 95vw;
+    width: 99vw;
     display: flex;
     align-items: center;
     align-content: center;
@@ -61,4 +61,16 @@ section h1 {
 section img {
     border-radius: 15px;
     width: 30vw;
+}
+@media only screen and (max-width: 768px) {
+    /* Mobile */
+    #header {
+        font-size: 60px;
+    }
+    section img {
+        width: 42vw;
+    }
+    section h1 {
+        font-size: 22px;
+    }
 }
