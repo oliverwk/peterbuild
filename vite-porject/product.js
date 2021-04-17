@@ -59,18 +59,17 @@ if (product) {
 
 //Dit is voor betalen
 fetch('https://peterbuildpay.herokuapp.com/config')
-.then(function (result) {
+.then(result => {
     return result.json();
 })
-.then(function (json) {
+.then(json => {
     window.config = json;
     window.stripe = Stripe(config.publicKey);
 });
 
 // When the form is submitted...
-var submitBtn = document.querySelector('#submit');
-submitBtn.addEventListener('click', function (evt) {
-    
+let submitBtn = document.querySelector('#submit');
+submitBtn.addEventListener('click', evt => {
     // Create the checkout session.
     fetch('https://peterbuildpay.herokuapp.com/create-checkout-session', {
     method: 'POST',
@@ -80,18 +79,18 @@ submitBtn.addEventListener('click', function (evt) {
     body: JSON.stringify({
         quantity: 1,
     }),
-}).then(function (result) {
+}).then(result => {
     return result.json();
-}).then(function (data) {
+}).then(data => {
     // Redirect to Checkout. with the ID of the
     // CheckoutSession created on the server.
     stripe.redirectToCheckout({
         sessionId: data.sessionId,
     })
-    .then(function (result) {
+    .then(result => {
         // If redirection fails, display an error to the customer.
         if (result.error) {
-            var displayError = document.getElementById('error-message');
+            let displayError = document.getElementById('error-message');
             displayError.textContent = result.error.message;
         }
     });
