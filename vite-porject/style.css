@@ -1,449 +1,449 @@
 @font-face {
-    font-family: 'SF Pro';
-    src: url('Avenir-Bold.ttf');
-  }
-  @font-face {
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4') format('woff2');
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-  }
-  body {
-    background-color: #132999;
-  }
-  .Ellipse_1_Class {
-    opacity: 0.5;
-  }
-  .Ellipse_1 {
-    position: absolute;
-    overflow: visible;
-    width: 663px;
-    height: 663px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .Ellipse_2_Class {
-    opacity: 0.3;
-  }
-  .Ellipse_2 {
-    position: absolute;
-    overflow: visible;
-    width: 842px;
-    height: 842px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .Ellipse_3_Class {
-    opacity: 0.05;
-  }
-  .Ellipse_3 {
-    position: absolute;
-    overflow: visible;
-    width: 960px;
-    height: 960px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .PeterBuild_Class {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: visible;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 90px;
-    color: white;
-  }
-  .header_text_Class {
-    position: absolute;
-    top: calc(60% + 10ch);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: visible;
-    width: 281px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    color: white;
-  }
-  .about {
-    background-image: url('about.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 125vh;
-    width: 99vw;
-    display: grid;
-    place-content: center;
-    gap: 1ch;
-  }
-  .about_header {
-    overflow: visible;
-    padding-top: 15vh;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    color: white;
-  }
-  .InfoAbout {
-    padding-top: 2vh;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    color: #bfbbbb;
-  }
-  .feedback {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-direction: row;
-  }
-  .feedback div {
-    padding: 3vw;
-  }
-  .feedback span {
-    position: relative;
-    overflow: visible;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    color: #bfbbbb;
-  }
-  .feedback p {
-    position: relative;
-    overflow: visible;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 70px;
-    color: white;
-    padding: 1vw;
-  }
-  
-  #projecten {
-    padding-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1ch;
-  }
-  .ProjectenHeader {
-    top: 20vh;
-    overflow: visible;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    color: #00eafa;
-    letter-spacing: 0.2px;
-  }
-  .protofolio {
-    padding-top: 0px; 
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-direction: row;
-    width: min-content;
-  }
-  .protofolio img {
-    margin-top: 100px;
-    width: 326px;
-    height: 500px;
-  }
-  .protofolio div {
-    padding: clamp(10px, 3vw, 100px);
-  }
-  .protofolio svg {
-    width: 326px;
-    height: 10px;
-  }
-  .protofolio div:nth-child(even) {
-    padding-top: 250px; 
-    /*Deze naar beneden doen*/
-  }
-  .protofolio h1 {
-    overflow: visible;
-    white-space: nowrap;
-    text-align: left;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    color: white;
-    letter-spacing: 0.2px;
-  }
-  
-  .diensten {
-    background-image: url('diensten.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    width: 99vw;
-    display: grid;
-    place-content: center;
-    gap: 1ch;
-  }
-  .dienst_header {/*
-    position: absolute;
-    left: 829px;
-    top: 3812px;
-    width: 263px;*/
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    color: rgba(0,234,250,1);
-    letter-spacing: 0.5px;
-  }
-  
-  .kwaliteiten {
-    padding-top: 10vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-direction: row;
-  }
-  .kwaliteiten div {
-    padding: 3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .kwaliteiten p {
-    overflow: visible;
-    white-space: nowrap;
-    line-height: 30px;
-    text-align: center;
-    font-family: 'Avenir';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    color: #bfbbbb;
-    letter-spacing: 0.05px;
-  }
-  .kwaliteiten h2 {
-    overflow: visible;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
-  }
-  
-  footer {
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-direction: column;
-  }
-  footer .header {
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    color: rgba(0,234,250,1);
-    letter-spacing: 0.5px;
-    padding: 15vh;
-  }
-  form input[type=email] {
-    width: 30ch;
-  }
-  form input[name=naam] {
-    width: 30ch;
-  }
-  form input[name=Onderwerp] {
-    width: 60ch;
-  }
-  form textarea[name=Bericht] {
-    width: 60ch;
-    height: 15ch;
-  }
-  form textarea {
-    padding: 10px;
-    color: white;
-    flex-wrap: wrap-reverse;
-    background-color: #132999;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #00eafa;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-  }
-  form input {
-    padding: 10px;
-    color: white;
-    flex-wrap: wrap-reverse;
-    background-color: #132999;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #00eafa;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-  }
-  form label {
-    left: 8px;
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: all 200ms;
-    color: white;
-  }
-  footer button {
-    padding-top: 10vh;
-    color: #00eafa;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #132999;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-  }
-  .copyright {
-    padding-top: 10vh;
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-direction: row;
-  }
-  .copyright p {
-    overflow: visible;
-    white-space: nowrap;
-    text-align: center;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: #00eafa;
-  }
-  
-  .head {
-    background-image: url('peter.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-blend-mode: color;
-    width: 100vw;
-    height: 125vh;
-  }
-  
-  body > main > section#projecten > div > div > a > img:hover {
-    filter: grayscale(0%);
-    animation-name: graying;
-    animation-duration: 0.5s;
-  }
-  
-  body > main > section#projecten > div > div > a > img {
-    filter: grayscale(100%);
-    transition: filter 0.5s linear;
-  }
-  @keyframes graying {
-    from {filter: grayscale(100%);}
-    to {filter: grayscale(0%);}
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-image: url('about-2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-blend-mode: color;
-    height: 125vh;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: normal;
-    color: #00eafa;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
+  font-family: 'SF Pro';
+  src: url('Avenir-Bold.ttf');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/l/font?kit=ijwWs5PnXdA4ZZUg4Zd-m2FJXKnyg4RcQFvYHHQ&skey=8887f17a62203d44&v=v4') format('woff2');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+body {
+  background-color: #132999;
+}
+.Ellipse_1_Class {
+  opacity: 0.5;
+}
+.Ellipse_1 {
+  position: absolute;
+  overflow: visible;
+  width: 663px;
+  height: 663px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Ellipse_2_Class {
+  opacity: 0.3;
+}
+.Ellipse_2 {
+  position: absolute;
+  overflow: visible;
+  width: 842px;
+  height: 842px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Ellipse_3_Class {
+  opacity: 0.05;
+}
+.Ellipse_3 {
+  position: absolute;
+  overflow: visible;
+  width: 960px;
+  height: 960px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.PeterBuild_Class {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  color: white;
+}
+.header_text_Class {
+  position: absolute;
+  top: calc(60% + 10ch);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: visible;
+  width: 281px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+}
+.about {
+  background-image: url('about.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 125vh;
+  width: 99vw;
+  display: grid;
+  place-content: center;
+  gap: 1ch;
+}
+.about_header {
+  overflow: visible;
+  padding-top: 15vh;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+}
+.InfoAbout {
+  padding-top: 2vh;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  color: #bfbbbb;
+}
+.feedback {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+.feedback div {
+  padding: 3vw;
+}
+.feedback span {
+  position: relative;
+  overflow: visible;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  color: #bfbbbb;
+}
+.feedback p {
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  color: white;
+  padding: 1vw;
+}
+
+#projecten {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+}
+.ProjectenHeader {
+  top: 20vh;
+  overflow: visible;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: #00eafa;
+  letter-spacing: 0.2px;
+}
+.protofolio {
+  padding-top: 0px; 
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+  width: min-content;
+}
+.protofolio img {
+  margin-top: 100px;
+  width: 326px;
+  height: 500px;
+}
+.protofolio div {
+  padding: clamp(10px, 3vw, 100px);
+}
+.protofolio svg {
+  width: 326px;
+  height: 10px;
+}
+.protofolio div:nth-child(even) {
+  padding-top: 250px; 
+  /*Deze naar beneden doen*/
+}
+.protofolio h1 {
+  overflow: visible;
+  white-space: nowrap;
+  text-align: left;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 0.2px;
+}
+
+.diensten {
+  background-image: url('diensten.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 99vw;
+  display: grid;
+  place-content: center;
+  gap: 1ch;
+}
+.dienst_header {/*
+  position: absolute;
+  left: 829px;
+  top: 3812px;
+  width: 263px;*/
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: rgba(0,234,250,1);
+  letter-spacing: 0.5px;
+}
+
+.kwaliteiten {
+  padding-top: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+.kwaliteiten div {
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.kwaliteiten p {
+  overflow: visible;
+  white-space: nowrap;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  color: #bfbbbb;
+  letter-spacing: 0.05px;
+}
+.kwaliteiten h2 {
+  overflow: visible;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+}
+footer .header {
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: rgba(0,234,250,1);
+  letter-spacing: 0.5px;
+  padding: 15vh;
+}
+form input[type=email] {
+  width: 30ch;
+}
+form input[name=naam] {
+  width: 30ch;
+}
+form input[name=Onderwerp] {
+  width: 60ch;
+}
+form textarea[name=Bericht] {
+  width: 60ch;
+  height: 15ch;
+}
+form textarea {
+  padding: 10px;
+  color: white;
+  flex-wrap: wrap-reverse;
+  background-color: #132999;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #00eafa;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+form input {
+  padding: 10px;
+  color: white;
+  flex-wrap: wrap-reverse;
+  background-color: #132999;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #00eafa;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+form label {
+  left: 8px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 200ms;
+  color: white;
+}
+footer button {
+  padding-top: 10vh;
+  color: #00eafa;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #132999;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+.copyright {
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+.copyright p {
+  overflow: visible;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #00eafa;
+}
+
+.head {
+  background-image: url('peter.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-blend-mode: color;
+  width: 100vw;
+  height: 125vh;
+}
+
+body > main > section#projecten > div > div > a > img:hover {
+  filter: grayscale(0%);
+  animation-name: graying;
+  animation-duration: 0.5s;
+}
+
+body > main > section#projecten > div > div > a > img {
+  filter: grayscale(100%);
+  transition: filter 0.5s linear;
+}
+@keyframes graying {
+  from {filter: grayscale(100%);}
+  to {filter: grayscale(0%);}
+}
+
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url('about-2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-blend-mode: color;
+  height: 125vh;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: normal;
+  color: #00eafa;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
+}
