@@ -16,6 +16,7 @@
 }
 body {
   background-color: #132999;
+  overflow-x: hidden;
 }
 .Ellipse_1_Class {
   opacity: 0.5;
@@ -214,11 +215,7 @@ body {
   place-content: center;
   gap: 1ch;
 }
-.dienst_header {/*
-  position: absolute;
-  left: 829px;
-  top: 3812px;
-  width: 263px;*/
+.dienst_header {
   text-align: center;
   font-family: 'SF Pro';
   font-style: normal;
@@ -347,6 +344,7 @@ footer button {
 }
 .copyright {
   padding-top: 10vh;
+  padding-bottom: 10vh;
   display: flex;
   align-items: center;
   align-content: space-between;
@@ -445,5 +443,67 @@ body > main > section#projecten > div > div > a > img {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Mobile */
+  .about {
+    height: 120vh;
+  }
+  .feedback {
+    flex-direction: column;
+  }
+  .feedback p {
+    font-size: 120px;
+  }
+  .feedback span {
+    font-size: 31px;
+  }
+  .about_header {
+    font-size: 70px;
+  }
+  .InfoAbout { 
+    font-size: 25px;
+  }
+  .protofolio {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+  .protofolio img {
+    width: 70vw;
+    height: auto;
+  }
+  .protofolio div {
+    padding: 5vh;
+  }
+  .protofolio h1 {
+    font-size: 60px;
+  }
+  .protofolio div:nth-child(even) {
+    padding: 5vh;
+  }
+  .diensten {
+    padding-top: 25vh;
+  }
+  .kwaliteiten {
+    flex-direction: column;
+  }
+  .kwaliteiten p {
+    font-size: 30px;
+  }
+  .kwaliteiten h2 {
+    font-size: 65px;
+  }
+  footer {
+    padding-top: 25vh;
+  }
+  form input {
+    width: 30ch !important;
+  }
+  form textarea[name=Bericht] {
+    width: 30ch;
+  }
+  form {
+    
   }
 }
