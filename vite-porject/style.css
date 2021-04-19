@@ -18,6 +18,13 @@ body {
   background-color: #132999;
   overflow-x: hidden;
 }
+header svg {
+  position: absolute;
+  overflow: visible;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .Ellipse_1_Class {
   opacity: 0.5;
 }
@@ -447,63 +454,91 @@ body > main > section#projecten > div > div > a > img {
 }
 @media only screen and (max-width: 768px) {
   /* Mobile */
+  .PeterBuild_Class {
+    top: 50%;
+    font-size: 70px;
+  }
+  .header_text_Class {
+    top: calc(50% + 10ch);
+  }
+  .about_header {
+    font-size: 40px;
+  }
+  .InfoAbout {
+    font-size: 15px;
+    max-width: 99vw;
+  }
   .about {
-    height: 120vh;
+    height: 140vh;
   }
   .feedback {
     flex-direction: column;
   }
   .feedback p {
-    font-size: 120px;
+    font-size: 80px;
   }
   .feedback span {
-    font-size: 31px;
-  }
-  .about_header {
-    font-size: 70px;
-  }
-  .InfoAbout { 
-    font-size: 25px;
+    font-size: 20px;
   }
   .protofolio {
     flex-direction: column;
     padding-top: 100px;
+    width: -webkit-min-content;
+    width: min-content;
   }
   .protofolio img {
     width: 70vw;
     height: auto;
   }
   .protofolio div {
-    padding: 5vh;
+    padding-top: 10vh;
   }
   .protofolio h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .protofolio div:nth-child(even) {
-    padding: 5vh;
+    padding: unset !important;
   }
   .diensten {
     padding-top: 25vh;
+    height: min-content;
+    height: -webkit-min-content;
+    padding-bottom: 15vh;
   }
   .kwaliteiten {
     flex-direction: column;
   }
   .kwaliteiten p {
-    font-size: 30px;
+    font-size: 25px;
   }
   .kwaliteiten h2 {
-    font-size: 65px;
+    font-size: 45px;
   }
   footer {
     padding-top: 25vh;
   }
   form input {
-    width: 30ch !important;
+    width: 25ch !important;
   }
   form textarea[name=Bericht] {
-    width: 30ch;
+    width: 25ch;
+  }
+  footer .header {
+    padding: unset;
+    padding-bottom: 15vh;
   }
   form {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1ch;
+  }
+  .copyright p {
+    overflow: unset;
+    white-space: unset;
+  }
+  header svg {
+    display: none;
   }
 }
