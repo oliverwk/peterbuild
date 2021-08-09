@@ -19,7 +19,8 @@
         let Lqeury = qeury[i].split("=");
         qeurys[Lqeury[0]] = decodeURIComponent(Lqeury[1]);
     }
-    console.log(window.location.search, qeurys);
+    console.log("The url qeury is:", window.location.search);
+    console.log("This is the js object", qeurys);
     text.innerText = JSON.stringify(qeurys);
 </script>
 </html>
