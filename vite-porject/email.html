@@ -14,11 +14,11 @@
     let text = document.getElementById('text');
     let urlParams = new URLSearchParams(window.location.search);
     let qeury = "";
-    let qeurys = urlParams.forEach((param, key) => {
-        console.log(key+": "+ param);
-        qeury += "<br>"+key + ": " + param;
+    let qeurys = urlParams.forEach((value, key) => {
+        console.log(`${key}: ${value}`);
+        qeury += `<br>${key}: ${value}`;
     });
 
-    text.innerHTML = qeury;
+    text.innerText = qeury;
 </script>
 </html>
